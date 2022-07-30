@@ -24,6 +24,7 @@ public class SpringCloudClientApplication {
         this.environment = environment;
     }
 
+    //    定时刷新server端配置修改后的值（/refresh）
     @Scheduled(fixedRate = 5 * 1000, initialDelay = 2 * 1000)
     public void autoRefresh() {
         Set<String> refreshValues = contextRefresher.refresh();
