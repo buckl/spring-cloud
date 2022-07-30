@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/jdbc
+http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
+http://www.springframework.org/schema/mvc">
+    <!--    扫描包com.apress.todo下面所有的（包括下级包）被@Service and @Configuration等注解的class加载到spring container中-->
+    <context:component-scan base-package="com.apress.todo"/>
+    <!-- <mvc:annotation-driven>  表示这是一个web app并且它会查找所有的  @Controller and @RestController class and their methods that have
+@RequestMapping or other Spring MVC annotations-->
+    <mvc:annotation-driven>
+        <!--   此标记通知MVC的Beans在有请求时使用什么来进行消息转换 ，比如HTTP头接受：application/xml的请求，它将响应为application/xml    -->
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.json.
+MappingJackson2HttpMessageConverter">
+                <property name="objectMapper" ref="jsonMapper"/>
+            </bean>
+            <bean class="org.springframework.http.converter.xml.
+MappingJackson2XmlHttpMessageConverter">
+                <property name="objectMapper" ref="xmlMapper"/>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+    <!--可以帮助格式化数据并创建正确的映射器-->
+    <bean id="jsonMapper" class="org.springframework.http.converter.json.
+Jackson2ObjectMapperFactoryBean">
+        <property name="simpleDateFormat" value="yyyy-MM-dd HH:mm:ss"/>
+    </bean>
+    <bean id="xmlMapper" parent="jsonMapper">
+        <property name="createXmlMapper" value="true"/>
+    </bean>
+    <!--    这个标记告诉SpringMVC要使用哪些资源，以及在哪里可以找到它们-->
+    <mvc:resources mapping="/webjars/**" location="classpath:META-INF/
+resources/webjars/"/>
+    <!--  指定 crud interfaces -->
+    <jpa:repositories base-package="com.apress.todo.repository"/>
+    <!--  因为这个应用程序使用的是JPA H2驱动 这个标记只是一个可以在启动时执行SQL脚本的实用程序的声明； -->
+    <jdbc:embedded-database id="dataSource" type="H2">
+        <jdbc:script location="classpath:META-INF/sql/schema.sql"/>
+        <jdbc:script location="classpath:META-INF/sql/data.sql"/>
+    </jdbc:embedded-database>
+    <!-- 使用JPA实现需要这个bean声明，也就是说JPA实现用的是Hibernate  -->
+    <bean id="jpaVendorAdapter"
+          class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+        <property name="showSql" value="true"/>
+    </bean>
+    <!-- 每一个JPA的实现都需要创建一个会话管理器来执行sql   -->
+    <bean id="entityManagerFactory"
+          class="org.springframework.orm.jpa.
+LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="jpaVendorAdapter" ref="jpaVendorAdapter"/>
+    </bean>
+    <!--    事务管理器-->
+    <bean id="transactionManager"
+          class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+    <!--  将事务用注解方式使用  -->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!--    匹配url-->
+    <bean
+            class="org.springframework.web.servlet.view.
+InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+    <!--    H2 服务器访问设置-->
+    <bean id="h2WebServer" class="org.h2.tools.Server" factory-method="createWebServer"
+          init-method="start" destroy-method="stop">
+        <constructor-arg value="-web,-webAllowOthers,-webDaemon,
+-webPort,8082"/>
+    </bean>
+
+</beans>
