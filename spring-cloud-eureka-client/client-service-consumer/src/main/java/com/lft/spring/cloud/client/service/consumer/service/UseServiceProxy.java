@@ -10,7 +10,9 @@ import java.util.Collection;
 
 @Service
 public class UseServiceProxy implements UserService {
-
+    /**
+     * eureka注册服务集群
+     */
     private static final String PROVIDER_SERVER_URL_PREFIX = "http://user-service-provider";
 
     /**
