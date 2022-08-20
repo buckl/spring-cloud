@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2266fac4-d16e-44c8-a7fa-38695406bc6d" name="Changes" comment="" />
+    <list default="true" id="2266fac4-d16e-44c8-a7fa-38695406bc6d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/AccessAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/Ann2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/Ann3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/ChangeLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/ChangeLogs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/DefaultException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/DescriptionAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/Enabled.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/FatalAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/Name.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/NonZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/PolicyTestCases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/RepeatableAnnTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/ReviewAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/TestAccessAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/TestCaseAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/TestRepeatable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/TestVersion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/Version.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/VersionAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/VersionProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/annotation/VersionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_laguage_features/src/main/java/com/lft/java/language/features/entity/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lft/annotation/test/WordsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lft/annotation/test/WordsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lft/annotation/test/StringInterpolation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lft/annotation/test/StringInterpolation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lft/annotation/test/WordsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lft/annotation/test/WordsTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +51,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -47,6 +85,7 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="27eg3CbzjvAoXHKBikQwuIHZTfQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,11 +93,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot/config.client" />
-    <property name="settings.editor.selected.configurable" value="shared-indexes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -66,7 +106,7 @@
       <recent name="com.lft.annotation.condition" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StringInterpolation">
+  <component name="RunManager" selected="JUnit.WordsTest.testUserInsert">
     <configuration name="StringInterpolation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lft.annotation.test.StringInterpolation" />
       <module name="annotation" />
@@ -174,8 +214,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StringInterpolation" />
         <item itemvalue="JUnit.WordsTest.testUserInsert" />
+        <item itemvalue="Application.StringInterpolation" />
         <item itemvalue="JUnit.TxTest.testUserInsert" />
         <item itemvalue="JUnit.IOC_Test.test1" />
         <item itemvalue="JUnit.IOC_Test.test2" />
@@ -221,11 +261,26 @@
       <workItem from="1658750973361" duration="2784000" />
       <workItem from="1658921581995" duration="2805000" />
       <workItem from="1658942982721" duration="580000" />
+      <workItem from="1659442432660" duration="7273000" />
+      <workItem from="1659711659323" duration="1048000" />
+      <workItem from="1659741603055" duration="6699000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
