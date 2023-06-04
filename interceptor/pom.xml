@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lft.test</groupId>
-    <artifactId>intercepter</artifactId>
+    <artifactId>interceptor</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>interceptor</name>
     <description>this is a demo for test interceptor for Spring Boot</description>
