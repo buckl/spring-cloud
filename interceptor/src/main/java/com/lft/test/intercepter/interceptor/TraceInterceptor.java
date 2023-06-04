@@ -11,13 +11,6 @@ import java.io.BufferedReader;
 public class TraceInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object o) throws Exception {
-//        BufferedReader reader = request.getReader();
-//        StringBuilder builder = new StringBuilder();
-//        String line;
-//        while (ObjectUtil.isNotEmpty(line = reader.readLine())){
-//            builder.append(line);
-//        }
-//        System.out.println(builder);
         return true;
     }
 

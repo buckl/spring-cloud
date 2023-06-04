@@ -1,5 +1,6 @@
 package com.lft.test.intercepter.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import lombok.Data;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,7 +12,7 @@ public class ClientController {
 
     @GetMapping("/first/request")
     public String firstRequest(@RequestBody Param param) {
-        return "hello world";
+        return JSONObject.toJSONString(param);
     }
 
     @Data
