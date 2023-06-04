@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.lft</groupId>
-	<artifactId>spring-cloud-eureka-test-feign</artifactId>
+	<artifactId>spring-cloud-feign-eureka</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-cloud-feign-eureka</name>
+	<name>spring-cloud-eureka-feign-server</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
