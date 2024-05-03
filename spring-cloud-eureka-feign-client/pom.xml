@@ -5,7 +5,7 @@
     <modules>
         <module>person-api</module>
         <module>person-client</module>
-        <module>person-service-service</module>
+        <module>person-service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -16,7 +16,7 @@
     <groupId>com.lft</groupId>
     <artifactId>spring-cloud-eureka-feign-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud-feign-client</name>
+    <name>spring-cloud-eureka-feign-client</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
     <properties>

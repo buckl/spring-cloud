@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="annotation" />
+        <module name="spring-cloud-eureka-feign-server" />
+        <module name="spring-cloud-hystrix-client" />
+        <module name="client-service-consumer" />
+        <module name="person-api" />
+        <module name="spring-cloud-config-server" />
+        <module name="first-spring-boot" />
+        <module name="user-service-provider" />
+        <module name="spring-cloud-eureka-server" />
+        <module name="person-client" />
+        <module name="person-service" />
+        <module name="java-laguage-features" />
+        <module name="spring-cloud-hystrix-dashboard" />
+        <module name="client-api" />
+        <module name="spring-cloud-config-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="annotation" target="8" />
+      <module name="client-api" target="8" />
+      <module name="client-service-consumer" target="8" />
+      <module name="first-spring-boot" target="8" />
+      <module name="interceptor" target="1.8" />
+      <module name="java-laguage-features" target="8" />
+      <module name="person-api" target="8" />
+      <module name="person-client" target="8" />
+      <module name="person-service" target="8" />
+      <module name="person-service-service" target="8" />
+      <module name="spring-cloud-config-client" target="8" />
+      <module name="spring-cloud-config-server" target="1.8" />
+      <module name="spring-cloud-eureka-client" target="1.8" />
+      <module name="spring-cloud-eureka-feign-client" target="1.8" />
+      <module name="spring-cloud-eureka-feign-server" target="1.8" />
+      <module name="spring-cloud-eureka-server" target="1.8" />
+      <module name="spring-cloud-feign-eureka" target="1.8" />
+      <module name="spring-cloud-hystrix-client" target="1.8" />
+      <module name="spring-cloud-hystrix-dashboard" target="1.8" />
+      <module name="user-service-provider" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
