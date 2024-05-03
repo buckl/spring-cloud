@@ -5,7 +5,7 @@ import com.lft.annotation.config.Config;
 
 import javax.sound.midi.Soundbank;
 
-public class mainTest {
+public class AnnotationApplication {
 
     public static void main(String[] args) {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
