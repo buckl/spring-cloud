@@ -1,9 +1,7 @@
 import com.lft.annotation.bean.User;
+import com.lft.annotation.config.Config;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import com.lft.annotation.config.Config;
-
-import javax.sound.midi.Soundbank;
 
 public class AnnotationApplication {
 
