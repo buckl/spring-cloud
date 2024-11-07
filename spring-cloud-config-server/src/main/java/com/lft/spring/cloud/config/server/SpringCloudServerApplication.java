@@ -14,4 +14,5 @@ public class SpringCloudServerApplication {
         SpringApplication.run(SpringCloudServerApplication.class, args);
     }
 
+
 }
