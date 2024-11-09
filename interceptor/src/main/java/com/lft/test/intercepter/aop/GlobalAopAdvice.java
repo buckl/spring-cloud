@@ -15,8 +15,8 @@ public class GlobalAopAdvice {
 
     @Before("controllerPointcut()")
     public void beforeAdvice(JoinPoint joinPoint) {
-        Object[] args = joinPoint.getArgs();
-        String paramString = JSONObject.toJSONString(args[0]);
-        System.out.println(paramString);
+//        Object[] args = joinPoint.getArgs();
+//        String paramString = JSONObject.toJSONString(args[0]);
+//        System.out.println(paramString);
     }
 }

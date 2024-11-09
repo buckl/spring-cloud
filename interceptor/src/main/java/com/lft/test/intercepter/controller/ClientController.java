@@ -15,6 +15,11 @@ public class ClientController {
         return JSONObject.toJSONString(param);
     }
 
+    @GetMapping("/test")
+    public String test(){
+        return  "hello world";
+    }
+
     @Data
     public static class Param {
         private String name;
