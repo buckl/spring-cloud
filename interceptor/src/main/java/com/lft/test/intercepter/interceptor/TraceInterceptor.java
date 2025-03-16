@@ -1,12 +1,10 @@
 package com.lft.test.intercepter.interceptor;
 
-import cn.hutool.core.util.ObjectUtil;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.BufferedReader;
 
 public class TraceInterceptor implements HandlerInterceptor {
     @Override
